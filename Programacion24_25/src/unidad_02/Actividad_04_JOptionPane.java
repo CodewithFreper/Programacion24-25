@@ -8,7 +8,7 @@ public class Actividad_04_JOptionPane {
 		// TODO Auto-generated method stub
 		
 		/*Implementa un programa que muestra cuánto valdrán unas deportivas con un precio de
-		* 85.00 euros, si están rebajadas un 15%.
+		* 85.00 euros, si están rebajadas un 15%. 
 		* Utilizando la clase JOptionPane.*/
 		
 
