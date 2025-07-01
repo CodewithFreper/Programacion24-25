@@ -23,6 +23,8 @@ public class Actividad_personal {
 		base_imponible = PVP / (1+ IVA/100);
 		
 		System.out.println("La base imponible es: " + base_imponible + "€.");
+		
+		lector.close();
 
 	}
 

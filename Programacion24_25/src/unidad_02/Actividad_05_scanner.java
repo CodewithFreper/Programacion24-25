@@ -45,6 +45,8 @@ public class Actividad_05_scanner {
 		importe_final = importe_inicial + intereses_finales;
 		
 		System.out.println("Intereses finales recibidos: " + intereses_finales + " €.\nTotal en la cuenta a los 6 meses: " + importe_final + " €.");
+		
+		lector.close();
 	}
-
+		
 }
