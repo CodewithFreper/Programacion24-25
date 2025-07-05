@@ -41,7 +41,7 @@ public class Actividad_09 {
 		
 		System.out.println(input + " segundos son:\n" + dias +" días,\n" + horas + " horas,\n" + minutos + " minutos y\n" + segundos + " segundos.");
 
-
+		lector.close();
 		
 
 	}
