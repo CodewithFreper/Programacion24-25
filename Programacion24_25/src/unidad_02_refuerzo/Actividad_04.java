@@ -31,8 +31,6 @@ public class Actividad_04 {
 		System.out.println("Suma: " + suma + "\nResta: " + resta + "\nProducto: " + producto + "\nDivisión: " + division);
 		
 		lector.close();
-		
-		
 
 	}
 
