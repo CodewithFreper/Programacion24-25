@@ -60,7 +60,7 @@ public class Actividad_16 {
 			
 		}
 		
-		
+		lector.close();
 
 	}
 
