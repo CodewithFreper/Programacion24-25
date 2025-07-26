@@ -36,6 +36,9 @@ public class Actividad_01 {
 		else if (nota < 7) System.out.println("BIEN");
 		else if (nota < 9) System.out.println("NOTABLE");
 		else System.out.println("EXCELENTE");
+
+		lector.close();
+		
 	}	
 
 }

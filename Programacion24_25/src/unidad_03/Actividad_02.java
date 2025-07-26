@@ -51,5 +51,8 @@ public class Actividad_02 {
 		cantidad = cantidad % 2;
 		cent1 = cantidad / 1;
 		System.out.println("Monedas de 1 céntimo: " + cent1);
+		
+		lector.close();
+		
 	}
 }

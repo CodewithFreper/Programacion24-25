@@ -54,6 +54,8 @@ public class Actividad_18 {
 		
 		System.out.println("Nombre: " + nombre + "; \nSalario bruto: " + salario_bruto + "€ br/sem; \nTasas: " + tasas + "€; \nSalario neto: " + salario_neto + "€ net/sem.");
 		
+		lector.close();
+		
 	}
 
 }

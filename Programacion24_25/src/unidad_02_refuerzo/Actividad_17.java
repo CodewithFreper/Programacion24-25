@@ -30,6 +30,7 @@ public class Actividad_17 {
 		segundos++;
 		System.out.println("Transcurrido un segundo, la hora será: " + horas + " horas, " + minutos + " minutos y " + segundos + " segundos.");
 
+		lector.close();
 	}
 
 }
