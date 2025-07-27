@@ -33,31 +33,31 @@ public class Actividad_03 {
 		System.out.println("Edad:");
 		edad = lector.nextInt();
 
-		
 		// Empezamos con la lógica
 		
 		if (edad >= 65) {
-			System.out.println("La cuota que debe abonar es: " + (general - dto_senior) + "€.");
+			System.out.println(nombre + ", la cuota que debes abonar es: " + (general - dto_senior) + "€.");
 		}
 		else if (edad < 18) {
-			System.out.println("¿Tus padres son socios? S/N");
+			System.out.println("¿"+ nombre + ", tus padres son socios? S/N");
 			padres_socios = lector.next();
+			
+			while (!padres_socios.equalsIgnoreCase("s") && !padres_socios.equalsIgnoreCase("n") ) {
+				
+				System.out.println(nombre + ", por favor, introduce S o N.");
+				padres_socios = lector.next();
+			}
+			
 			if (padres_socios.equalsIgnoreCase("s")) {
-				System.out.println("La cuota que debe abonar es: " + (general - dto_junior_socio) + "€.");
+				System.out.println(nombre + ", la cuota que debes abonar es: " + (general - dto_junior_socio) + "€.");
 			}
 			else if (padres_socios.equalsIgnoreCase("n")) {
-				System.out.println("La cuota que debe abonar es: " + (general - dto_junior) + "€.");
+				System.out.println(nombre + ", la cuota que debes abonar es: " + (general - dto_junior) + "€.");
 			}
-			else {
-				while (!padres_socios.equalsIgnoreCase("s") || !padres_socios.equalsIgnoreCase("n") ) {
-				
-					System.out.println("Por favor, introduce S o N.");
-					padres_socios = lector.next();
-				}
-			}
+			
 		}
 		else {
-			System.out.println("La cuota que debe abonar es: " + general + "€.");
+			System.out.println(nombre + ", la cuota que debes abonar es: " + general + "€.");
 		}
 		lector.close();
 	}
