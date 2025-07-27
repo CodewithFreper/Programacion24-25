@@ -59,7 +59,7 @@ public class Actividad_03 {
 		else {
 			System.out.println("La cuota que debe abonar es: " + general + "€.");
 		}
-		
+		lector.close();
 	}
 
 }
