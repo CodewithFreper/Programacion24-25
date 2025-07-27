@@ -6,7 +6,7 @@ public class Actividad_03 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		
+
 		/*
 		Escribe un programa que calcule la cuota que se debe de abonar en un club de golf. La
 		cuota general es de 500€. Tendrán un 50% de descuento las personas mayores de 65
