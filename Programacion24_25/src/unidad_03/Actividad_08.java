@@ -31,7 +31,7 @@ public class Actividad_08 {
 			}
 		}
 		System.out.println("Hay " + pares + " números pares.");
-		lector.close();
+			lector.close();
 	}
 
 }
