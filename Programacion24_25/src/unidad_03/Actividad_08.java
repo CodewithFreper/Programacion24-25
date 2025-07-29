@@ -16,12 +16,14 @@ public class Actividad_08 {
 		int B; 
 		int i; 
 		int pares = 0; 
-		Scanner lector = new Scanner (System.in);
+		Scanner lector = new Scanner(System.in);
 		
 		System.out.println("Introduce un número:");
 		B = lector.nextInt();
 		System.out.println("Ahora introduce un número mayor:");
 		A = lector.nextInt();
+
+		lector.close();
 		
 		for (i = A; i >= B; i--) {
 			System.out.println(i);
@@ -30,8 +32,9 @@ public class Actividad_08 {
 				pares++;
 			}
 		}
+		
 		System.out.println("Hay " + pares + " números pares.");
-			lector.close();
+
 	}
 
 }
