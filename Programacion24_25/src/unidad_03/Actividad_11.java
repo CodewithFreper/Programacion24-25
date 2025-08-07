@@ -1,5 +1,7 @@
 package unidad_03;
 
+import java.util.Scanner;
+
 public class Actividad_11 {
 
 	public static void main(String[] args) {
@@ -12,7 +14,36 @@ public class Actividad_11 {
 		 * Java.
 		 */
 		
+		double a;
+		int b;
+		int i;
+		double resultado = 1;
+		Scanner lector = new Scanner(System.in);
+		
+		System.out.println("Introduce la base de la potencia:");
+		a = lector.nextDouble();
+		
+		System.out.println("Introduce el exponente:");
+		b = lector.nextInt();
+		
+		if (a == 0) {
+			resultado = 0;
+		}
+		if (b == 0) {
+			resultado = 1;
+		} else if (b > 0) {
+			for (i = b; i > 0; i--) {
+				resultado  *= a;
+			}
+		} else if ( b < 0){
+			for (i = b; i < 0; i++) {
+				resultado  *= a;
+			}
+			resultado = 1 / resultado;
+		}
+
+		System.out.println("El resultado es: " + resultado);
 
 	}
 
-}
+}   //Falta especificar el caso de a=0 y b=0 que es una indeterminación matemática
