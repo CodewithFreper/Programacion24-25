@@ -1,5 +1,7 @@
 package unidad_03;
 
+import java.util.Scanner;
+
 public class Actividad_15 {
 
 	public static void main(String[] args) {
@@ -28,6 +30,35 @@ public class Actividad_15 {
 		 * Has necesitado 5 intentos.
 		 */
 
+		int numUsuario;
+		int numRandom;
+		int i = 1;
+		Scanner lector = new Scanner(System.in);
+		
+		numRandom = (int)(Math.random() * 100) + 1;
+		
+		System.out.println(numRandom);
+		
+		System.out.println("Vamos a jugar a un juego, el ordenador pensará un número y tú tienes que adivinarlo en el menos número de intentos posibles. \nVamos, di un número:");
+		numUsuario = lector.nextInt();
+		
+		do {
+			while (numUsuario > numRandom) {
+				System.out.println("Te has pasado, vamos, inténtalo otra vez:");
+				numUsuario = lector.nextInt();
+				i++;
+			}
+			while (numUsuario < numRandom) {
+				System.out.println("Te quedas corto, vamos, inténtalo otra vez:");
+				numUsuario = lector.nextInt();
+				i++;
+			}
+			} while (numUsuario != numRandom);
+		
+		System.out.println("¡¡¡Felicidades has acertado!!! \nLo has conseguido en " + i + (i==1?" intento.": " intentos."));
+		lector.close();
 	}
 
 }
+
+//FUNCIONA
