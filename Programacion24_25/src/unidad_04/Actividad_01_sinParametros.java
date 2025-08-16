@@ -2,7 +2,7 @@ package unidad_04;
 
 import java.util.Scanner;
 
-public class Actividad_01 {
+public class Actividad_01_sinParametros {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
