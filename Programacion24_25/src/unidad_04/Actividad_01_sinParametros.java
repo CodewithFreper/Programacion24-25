@@ -28,6 +28,7 @@ public class Actividad_01_sinParametros {
 			System.out.println("Por favor introduce el valor de C:");
 			c = lector.nextInt();
 			
+			lector.close();
 				if (a > b && a > c) {
 					return "A es el mayor.";
 					} else if (b > a && b > c) {

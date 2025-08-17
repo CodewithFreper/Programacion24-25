@@ -21,6 +21,7 @@ public class Actividad_01_parametros {
 		System.out.println("Por favor, introduce el valor de C:");
 		c = lector.nextInt();
 		
+		lector.close();
 		
 		//Llamamos e imprimimos el return del método
 		System.out.println(mayorDeTres(a,b,c));
