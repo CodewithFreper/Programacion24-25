@@ -27,6 +27,8 @@ public class Actividad_11 {
 		System.out.println("Introduce el exponente:");
 		b = lector.nextInt();
 		
+		lector.close();
+		
 		if (a == 0 && b == 0){
 			System.out.println("0 elevado a 0 es una indeterminación matemática");
 			return;
@@ -45,7 +47,7 @@ public class Actividad_11 {
 		}
 
 		System.out.println("El resultado es: " + resultado);
-
+		
 	}
 
 }   

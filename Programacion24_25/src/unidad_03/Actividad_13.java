@@ -17,7 +17,6 @@ public class Actividad_13 {
 		int num;
 		int i;
 		boolean esPrimo = true;
-		int numUsuario;
 		Scanner lector = new Scanner(System.in);
 		
 		do {
@@ -25,6 +24,7 @@ public class Actividad_13 {
 			num = lector.nextInt();
 		} while (num < 0);
 		
+		lector.close();
 		
 		if (num == 0 || num == 1) {
 			System.out.println(num + " no tiene descomposición en factores primos.");
@@ -39,7 +39,6 @@ public class Actividad_13 {
 		if (esPrimo) {
 			System.out.println("Es primo");
 		} else {
-			numUsuario = num; 
 			System.out.print(num + " = ");
 			for (i = 2; i<=num; i++) {
 				while (num % i == 0) {

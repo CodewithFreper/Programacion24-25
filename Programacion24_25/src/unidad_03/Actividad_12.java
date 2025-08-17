@@ -22,6 +22,8 @@ public class Actividad_12 {
 			num = lector.nextInt();
 		} while (num < 0);
 		
+		lector.close();
+		
 		if (num == 0 || num == 1) {
 			System.out.println(num + " no es un número primo");
 		} else if (num > 0) {
