@@ -22,6 +22,8 @@ public class Actividad_07 {
 		} while (num < 0);
 		
 		System.out.println("El factorial de " + num + " se descompone de la siguiente manera: \n" + factorial(num) + resultadoFactorial(num));
+		
+		lector.close();
 	}
 	
 	public static String factorial(int num) {
